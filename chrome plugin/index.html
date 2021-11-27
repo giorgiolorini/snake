@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake</title>
+</head>
+<body>
+    <h1 id="lost" class="hide gameMessage">You lost</h1>
+    <h1 id="pauseDiv" class="hide gameMessage">Paused</h1>
+    <h1 id="resetDiv" class="hide gameMessage">Memory Cleared</h1>
+    <div id="gameContainer">
+    </div>
+    <div id="gameInfo" class="container">
+        <p>Score:</p>
+        <p id="scoreText">0</p>
+    </div>
+    <div id="speedDiv" class="container">
+        <p>Speed:</p>
+        <input id="speedInput" type="number" max="5" min="1" value="3" readonly>
+        <p>/5</p>
+    </div>
+    <div id="scoreBox" class="container">
+        <h3>Highscore:</h3>
+        <p id="highscore">0</p>
+    </div>
+    <div id="snakeBox" class="container">
+        <h3>Dead Snakes:</h3>
+        <p id="numOfGames">0</p>
+    </div>
+    
+    <div id="infoDiv" class="container">
+        <p>Press i for  info</p>
+    </div>
+
+    <div id="guideDiv" class="hide">
+        <h3>Guide</h3>
+        <p>Commands:</p>
+        <p>Use the arrow keys or wasd keys to move.</p>
+        <p>Press 1, 2, 3, 4, 5 on the keyboard to increase or decrease the speed.</p>
+        <p>Press P to pause or resume the game.</p>
+        <p>Hold down the 'r' key to reset game data (highscore and games)</p>
+        <p><br>Rules:</p>
+        <p>Move your snake inside the box without hitting the edges or eating your tail.</p>
+        <p>Eat the bugs that spawn in the field to get bigger and get points.</p>
+        <p>For every bug eaten you get (250 + 50 x SPEED) points.</p>
+        <p><br>Credits:</p>
+        <p>Giorgio Lorini - www.giorgiolorini.it</p>
+        <p><br>BETA VERSION</p>
+        <p><br>Press i to close the info box.</p>
+
+    </div>
+
+    <!--
+    <div class=cable></div>
+    <div class=controller>
+        <div class=centerBlue>
+            <div class=centerLeft></div>   
+            <div class=centerRight></div>  
+        </div>
+        <div class=centerStart>
+            <div class=SLeft></div>
+            <div class=SRight></div>
+        </div>
+        <div class=centerSelect>
+            <div class=SLeft></div>
+            <div class=SRight></div>
+        </div>
+    
+        <div class=controllerLeft>
+            <div class=circle></div>
+            <div class=crossCenter>
+                <div class=crossTop></div>
+                <div class=crossBottom></div>
+                <div class=crossLeft></div>
+                <div class=crossRight></div>
+                <div class=crossCircle></div>
+            </div>
+        </div>
+        <div class=controllerRight>
+            <div class=backButton1Center>
+                <div class= cornerLeft1></div>
+                <div class= cornerRight1></div>
+            </div>
+            <div class=backButton2Center>
+                <div class= cornerLeft2></div>
+                <div class= cornerRight2></div>
+            </div>
+        </div>
+    </div>
+
+    -->
+
+    <div id="mobileCommands" class="container">
+        <table id="commands">
+            <tbody>
+                <tr>
+                    <td><button id="pauseButton" class="otherButtons">⦷</button></td>
+                    <td><button id="arrowUp">⬆︎</button></td>
+                    <td><button id="restartButton" class="otherButtons">↺</button></td>
+                </tr>
+                <tr>
+                    <td><button id="arrowLeft">⬅︎</button></td>
+                    <td></td>
+                    <td><button id="arrowRight">➡︎</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="arrowDown">⬇︎</button></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+    </div>
+
+    
+</body>
+<script src="main.js"></script>
+</html>

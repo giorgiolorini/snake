@@ -1,0 +1,22 @@
+{
+  "name": "Snake",
+  "description": "Need a break? Play snake!",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/images/128.png",
+      "32": "/images/128.png",
+      "48": "/images/128.png",
+      "128": "/images/128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/128.png",
+    "32": "/images/128.png",
+    "48": "/images/128.png",
+    "128": "/images/128.png"
+  }
+}
